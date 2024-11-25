@@ -54,6 +54,7 @@ android {
 dependencies {
 
     implementation(libs.androidx.ui.text.google.fonts)
+    implementation(libs.test.espresso.core)
     //compose
     val composeBom = platform(libs.androidx.compose.bom)
     implementation(composeBom)
@@ -68,6 +69,8 @@ dependencies {
     implementation(libs.google.android.material)
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.room.ktx)
+    implementation (libs.androidx.foundation)
+
 
     //test
     androidTestImplementation(libs.androidx.ui.test.junit4)
@@ -146,4 +149,5 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     testImplementation(libs.androidx.room.testing)
     ksp(libs.androidx.room.compiler)
+
 }
